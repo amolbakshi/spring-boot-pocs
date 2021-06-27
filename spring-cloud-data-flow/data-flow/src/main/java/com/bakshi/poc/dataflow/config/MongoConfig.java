@@ -9,7 +9,7 @@ import org.springframework.data.mongodb.config.AbstractReactiveMongoConfiguratio
 import org.springframework.data.mongodb.repository.config.EnableReactiveMongoRepositories;
 
 @Configuration
-@EnableReactiveMongoRepositories("org.springframework.stereotype.Repository")
+@EnableReactiveMongoRepositories("com.bakshi.poc.dataflow.repository")
 public class MongoConfig extends AbstractReactiveMongoConfiguration{
 
     @Bean
