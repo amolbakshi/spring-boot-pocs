@@ -18,5 +18,6 @@ import lombok.Setter;
 public class Extended {
     @Id
     public String id;
+    public Integer version;
     public List<Metadata> metadata;
 }
