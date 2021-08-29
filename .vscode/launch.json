@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ReactivePocApplication",
+            "request": "launch",
+            "mainClass": "src.main.java.com.bakshi.poc.reactivepoc.ReactivePocApplication",
+            "projectName": "spring-boot-pocs_8b25f0a0"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
