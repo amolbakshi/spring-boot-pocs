@@ -19,7 +19,7 @@ Logger logger = LoggerFactory.getLogger(SampleController.class);
 @Autowired(required = true)
 WebClient webClient;
 
-@GetMapping("simpleGet")
+@GetMapping("/simpleGet")
 public Mono<String> getSimpleResponse(){
     
     Mono<String> response =  webClient.get().uri("/get").retrieve().bodyToMono(String.class);
@@ -28,7 +28,7 @@ public Mono<String> getSimpleResponse(){
 }
 
 
-@GetMapping("getCar")
+@GetMapping("/getCar")
 public Mono<Car> getCar(){
     Car car = new Car("Accura","TL","2021", 100);
     Mono<Car> response =  webClient.post().uri("anything")
